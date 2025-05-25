@@ -41,7 +41,7 @@ async function calculateRoutes() {
     options: { g: true }
   };
 
-  const response = await fetch('https://api.openrouteservice.org/optimization', {
+const response = await fetch('https://corsproxy.io/?https://api.openrouteservice.org/optimization', {
     method: 'POST',
     headers: {
       'Authorization': API_KEY,
